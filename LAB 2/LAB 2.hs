@@ -123,16 +123,16 @@ pozitiiImpareComp l = [b | (a, b) <- indexedList, odd a]
 ---------------------------------------------
 
 
-prop_pozitive :: [Int] -> Bool
-prop_pozitive l = pozitiveRec l == pozitiveComp l
+prop_semiPare :: [Int] -> Bool
+prop_semiPare l = semiPareRecEq l == semiPareComp l
 
 
 prop_inInterval :: Int -> Int -> [Int] -> Bool
 prop_inInterval a b l = inIntervalRec a b l == inIntervalComp a b l
 
 
-prop_semiPare :: [Int] -> Bool
-prop_semiPare l = semiPareRecEq l == semiPareComp l
+prop_pozitive :: [Int] -> Bool
+prop_pozitive l = pozitiveRec l == pozitiveComp l
 
 
 prop_pozitiiImpare :: [Int] -> Bool
